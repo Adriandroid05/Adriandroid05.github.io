@@ -3,14 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Introduction</title>
+    <title>Your Name's GitHub Profile</title>
+    <!-- Import Tailwind CSS from a CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Use a clean, modern font for the entire page */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello!</h1>
-    <p>My name is Adriana</p>
-    <h2></h2>
-    <p></p>
-    <h2></h2>
-    <p></p>
+<body class="bg-gray-900 text-gray-200 antialiased leading-relaxed">
+
+    <!-- Main container for all content -->
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-6xl font-extrabold text-white mb-2">Your Name</h1>
+            <p class="text-xl text-blue-400 font-medium">Software Developer | Student</p>
+            <nav class="mt-6 flex justify-center space-x-6">
+                <!-- Replace '#' with your actual GitHub, LinkedIn, or other profile URLs -->
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Email</a>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-800 rounded-2xl shadow-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+            <p class="text-lg text-gray-300">
+                I'm a passionate developer with a focus on web technologies. I enjoy building
+                responsive and user-friendly applications using modern frameworks.
+                This is a placeholder for your personal bio. Feel free to describe
+                your skills, interests, and what you're currently working on.
+            </p>
+        </section>
+
+        <!-- Projects Section (using "classes" as a synonym for projects/repos) -->
+        <section id="projects" class="bg-gray-800 rounded-2xl shadow-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-6">My Projects</h2>
+
+            <!-- Project Card 1 -->
+            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                <h3 class="text-2xl font-semibold text-white mb-2">Project One</h3>
+                <p class="text-gray-300 mb-3">
+                    A brief description of your project. Mention the technologies used (e.g., React, Python, etc.)
+                    and what the project does.
+                </p>
+                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                    View on GitHub &rarr;
+                </a>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                <h3 class="text-2xl font-semibold text-white mb-2">Project Two</h3>
+                <p class="text-gray-300 mb-3">
+                    Another project description. Highlight key features and the problems it solves.
+                </p>
+                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                    View on GitHub &rarr;
+                </a>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                <h3 class="text-2xl font-semibold text-white mb-2">Project Three</h3>
+                <p class="text-gray-300 mb-3">
+                    A third project description. You can add as many of these as you need.
+                </p>
+                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                    View on GitHub &rarr;
+                </a>
+            </div>
+
+        </section>
+
+    </div>
+
 </body>
 </html>
+
